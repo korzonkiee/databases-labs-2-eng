@@ -58,3 +58,11 @@ Update Courses Set TeacherName = 'John', TeacherSurname = 'Smith' Where TeacherN
 
 Delete From Courses Where CourseCode = 'DB1'
 
+
+
+
+-- Task 2
+
+Create NonClustered Index IDX_Students_Name_Surname On Students (Name, Surname)
+Create NonClustered Index IDX_Courses_TeacherName_TeacherSurname On Courses (TeacherName, TeacherSurname)
+Create NonClustered Index IDX_StudentsCourses_RegistrationDate_FinishDate On StudentsCourses (RegistrationDate, FinishDate)
